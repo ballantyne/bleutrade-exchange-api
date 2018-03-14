@@ -6,6 +6,10 @@ var Account       = require(path.join(__dirname, 'lib', 'account'));
 var api = {};
 
 module.exports = klass(function(options) {
+  if (options == undefined) {
+    options = {};
+  }
+  
   if (options.verbose == undefined) {
     this.verbose = options.verbose;
   } else {
