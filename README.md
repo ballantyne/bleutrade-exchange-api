@@ -17,7 +17,8 @@ Usage
 ```javascript
 
 var options = {
-  "api_key": ""
+  "key": "",
+  "secret": ""
 }
 
 var Bleutrade = require('bleutrade-exchange-api');
